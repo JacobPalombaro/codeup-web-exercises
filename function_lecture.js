@@ -1,5 +1,6 @@
 
 
+
 function tryToGetADrink(){
     let isAtBar = true;
     let bac = .07;
