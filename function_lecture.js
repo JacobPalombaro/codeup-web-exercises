@@ -7,7 +7,7 @@ function flights(cloudy, howManyFlights) {
     } else console.log("Failure to launch");
 }
 
-flights( false, howManyFlights 9)
+flights( false, 9)
 
 
 
