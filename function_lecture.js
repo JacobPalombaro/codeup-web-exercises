@@ -1,28 +1,13 @@
+//Its definition has two parameters: a boolean which informs if it's cloudy and a number which tells us how many planes are scheduled to fly
+//If it is not cloudy AND there are less than 10 planes scheduled to fly, then today is a good day to fly!
 
-
-
-function tryToGetADrink(){
-    let isAtBar = true;
-    let bac = .07;
-    let age = 22;
-    let cashOnHand = 5.99;
-
-
-    let canHaveADrink = (isAtBar || (bac < .08 && age >= 21 && cashOnHand >= 5.00))  // true && false && true && true --> false
-
-    if (canHaveADrink) { // true or false
-        console.log("have a brewski my dude!");
-    } else { // it was not true
-        console.log("sorry buddy, no brew for you");
-    }
+function flights(cloudy, howManyFlights) {
+    if (!cloudy && (howManyFlights < 10)) {
+        console.log("Lets fly!");
+    } else console.log("Failure to launch");
 }
 
-tryToGetADrink();
-
-
-
-
-
+flights( false, howManyFlights 9)
 
 
 
