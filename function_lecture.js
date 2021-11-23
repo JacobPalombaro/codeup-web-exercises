@@ -8,10 +8,38 @@ function flights(cloudy, howManyFlights) {
 }
 
 flights( false, 9)
+//
 
 
 
+function getFullName(firstName, lastName){
+    return firstName + " " + lastName;
+}
+let fullName = getFullName("kelly", "homan");
+console.log(
+    fullName
+);
 
 
+// Return the sum of two numbers
+function add(x, y) {
+    return x + y;
+}
+console.log(add(7, 3));
 
+// Return the difference of two numbers
+function subtract(x, y) {
+    return x - y;
+}
+console.log(subtract(7, 3));
+// Return the product of two numbers
+function multiply(x ,y) {
+    return x * y;
+}
+console.log(multiply(7, 3));
 
+// Return the dividend of two numbers
+function divide(x, y) {
+    return x / y;
+}
+console.log(divide(7, 3));
