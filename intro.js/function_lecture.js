@@ -43,3 +43,4 @@ function divide(x, y) {
     return x / y;
 }
 console.log(divide(7, 3));
+
