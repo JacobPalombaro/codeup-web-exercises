@@ -62,12 +62,20 @@
 // == value
 // === type and value
 
-let isHungry = "true";
-if(isHungry == true){
-    console.log("i'm hungry");
-} else {
-    console.log("not hungry")
-}
+// let isHungry = "true";
+// if(isHungry == true){
+//     console.log("i'm hungry");
+// } else {
+//     console.log("not hungry")
+// }
 
+// if(true == "true"){
+//     console.log("i'm hungry");
+// } else {
+//     console.log("not hungry")
+// }
 
-
+// (condition) {true do this} else {do that}
+// condition ? if true- do this : do this
+let weather = "sunny"
+weather === "sunny" ? console.log("matches") : console.log("not matches");
