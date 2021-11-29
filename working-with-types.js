@@ -17,7 +17,7 @@ if ((classroom = "not full") && (schedule = "no conflitcs")){
 }
 
 var username ="codeup";
-var password = 'notastrongpassword';
+var password = 'notastrongpassword;
 console.log(password.length >= 5);
 console.log(password == password.replace("codeup" , ""));
 console.log(username.length <= 20);
