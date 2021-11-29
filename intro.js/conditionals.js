@@ -40,23 +40,34 @@
 // function for each student.
 // Scoring: A: 90 + , B: 80 - 89, C: 70-79, D: 60 - 69, F: 60 - (edited)
 
-function letterGrade (studentGrade) {
-    if (studentGrade >= 90) {
-        console.log("A");
-    }else if (studentGrade >= 80) {
-        console.log("B");
-    }else if (studentGrade >= 70) {
-        console.log("C");
-    }else if (studentGrade >= 60) {
-        console.log("D");
-    }else {
-        console.log("F");
-    }
+// function letterGrade (studentGrade) {
+//     if (studentGrade >= 90) {
+//         console.log("A");
+//     }else if (studentGrade >= 80) {
+//         console.log("B");
+//     }else if (studentGrade >= 70) {
+//         console.log("C");
+//     }else if (studentGrade >= 60) {
+//         console.log("D");
+//     }else {
+//         console.log("F");
+//     }
+// }
+//
+// console.log(letterGrade(studentGrade: 88));
+
+
+//=assigning steps ex let myVar = 9;
+
+// == value
+// === type and value
+
+let isHungry = "true";
+if(isHungry == true){
+    console.log("i'm hungry");
+} else {
+    console.log("not hungry")
 }
-
-console.log(letterGrade(studentGrade: 88));
-
-
 
 
 
