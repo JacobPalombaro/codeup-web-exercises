@@ -169,6 +169,20 @@
 //  * Test your function by passing various string literals to it and
 //  * console.logging the function's return value
 //  */
+function analyzeColor(color) {
+
+    if(color === "red") {
+        alert("pomegranates are red")
+    } else if (color === "blue") {
+        alert("the oceans from space are blue")
+    } else if (color === "cyan") {
+        alert("Cyan is pretty cool")
+    }   else {
+        alert("that's also a cool color!")
+    }
+
+}
+analyzeColor("red")
 //
 // // Don't change the next two lines!
 // // These lines create two variables for you:
@@ -193,7 +207,7 @@
 //  * Prompt the user for a color when the page loads, and pass the input from the
 //  * user to your `analyzeColor` function. Alert the return value from your
 //  * function to show it to the user.
-//  */
+
 // /* ########################################################################## */
 //
 // /**
