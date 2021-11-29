@@ -3,7 +3,7 @@
 
 
 
-// suny --> shirt
+// sunny --> shirt
 
 
 // if statement:
@@ -21,7 +21,7 @@
 //     else {
 //         console.log("wear whatever");
 //     }
-    //
+//_________________________________________________________________________________
 // let myAge = 21;
 // let actualAge = 31;
 //
@@ -33,7 +33,7 @@
 //         }
 //     }
 //     checkAge(myAge, actualAge);
-
+//_________________________________________________________________________________
 // Create 5 different variables that holds 5 different number grades.
 // (ex: let laurasGrade = 99) Write a function that accepts a student’s number grade,
 // and returns  their letter grade based on their number grade. Call the
@@ -56,12 +56,12 @@
 //
 // console.log(letterGrade)
 
-
+//_________________________________________________________________________________
 //=assigning steps ex let myVar = 9;
 
 // == value
 // === type and value
-
+//_________________________________________________________________________________
 // let isHungry = "true";
 // if(isHungry == true){
 //     console.log("i'm hungry");
@@ -74,7 +74,7 @@
 // } else {
 //     console.log("not hungry")
 // }
-
+//_________________________________________________________________________________
 // (condition) {true do this} else {do that}
 // condition ? if true- do this : do this
 // let weather = "sunny"
@@ -91,16 +91,59 @@
 //     ? console.log("you got another grade")
 //     : console.log("you got an eighty!");
 
+
+//_________________________________________________________________________________
+
 // weather sunny = sunglasses, rainy = umbrella, snowy = 10 jackets.
 //Switch formula
-let weather = "snowy";
-switch (weather){
-    case "sunny":
-        console.log("sunglasses");
-        break;
-    case "rainy":
-        console.log("umbrella");
-        break;
-    case "snowy":
-            console.log("10 jackets");
-}
+// let weather = "snowy";//= outside weather aka a condition
+// switch (weather){ // switch signifies choices against the option weather ="....."
+//     case "sunny":// condition type
+//         console.log("sunglasses");//response
+//         break;
+//     case "rainy":// condition type
+//         console.log("umbrella");// response
+//         break;//signifies multiple options for conditions
+//     case "snowy":// condition type
+//             console.log("10 jackets");//response
+// }
+
+//__________________________________________________________________________
+// let joe = 66;
+// let sue = 84;
+// let zack = 77
+// let mark = 98
+//
+//
+// switch (joe) {
+//     case >= 90:
+//         console.log("you got an A");
+//         break;
+//     case >= 80:
+//         console.log("you got a B");
+//         break;
+//     case >= 70:
+//         console.log("you got a C");
+//         break;
+//     case >= 60:
+//         console.log("you got a D");
+//         break;
+//     case =59:
+//         console.log("you Failed");
+// }
+//_________________________________________________________________________
+
+// let num1 = 15;
+//
+// switch(num1){
+//     case 10:
+//         console.log("ten!");
+//     case 15:
+//         console.log("fifteen!");
+//         num1 += 5;
+//     case 20:
+//         console.log("twenty!");
+// }
+//__________________________________________________________________________
+
+
