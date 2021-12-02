@@ -169,20 +169,39 @@
 //  * Test your function by passing various string literals to it and
 //  * console.logging the function's return value
 //  */
-function analyzeColor(color) {
 
-    if(color === "red") {
-        alert("pomegranates are red")
-    } else if (color === "blue") {
-        alert("the oceans from space are blue")
-    } else if (color === "cyan") {
-        alert("Cyan is pretty cool")
-    }   else {
-        alert("that's also a cool color!")
+function analyzeColor(string){
+    if (string === "blue"){
+        console.log("the sky is blue");
+    }else if (string === "red"){
+        console.log("apples are red");
+    }else if (string === "cyan") {
+        console.log("no idea what that is");
     }
-
+    else {
+        console.log("color is unknown")
+    }
 }
-analyzeColor("red")
+
+analyzeColor("orange");
+
+// function analyzeColor(color) {
+//     if (color === "blue"){
+//         console.log("the sky if blue")
+//     }else if(color === "red") {
+//         console.log("pomegranates are red")
+//     } else if (color === "orange") {
+//         console.log("oranges are orange")
+//     } else if (color === "green") {
+//         console.log("grass is green")
+//     } else if (color === "yellow") {
+//         console.log("bananas are yellow")
+//     }   else {
+//         console.log("that's also a cool color!")
+//     }
+//
+// }
+// analyzeColor(randomColor);
 //
 // // Don't change the next two lines!
 // // These lines create two variables for you:
@@ -196,6 +215,35 @@ analyzeColor("red")
 //  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
 //  * You should see a different message every time you refresh the page
 //  */
+// var color = "blue";
+// var questionAnswer = randomColor;
+//
+// function pickAColor(color) {
+//     switch (randomColor){
+//         case "blue":
+//             console.log("the sky is blue");
+//             break;
+//         case "red":
+//             console.log("pomegranates are red")
+//             break;
+//         case "blue":
+//             console.log("the oceans from space are blue")
+//             break;
+//         case "orange":
+//             console.log("oranges are orange")
+//             break;
+//         case "green":
+//             console.log("grass is green")
+//             break;
+//         case "yellow":
+//             console.log("bananas are yellow")
+//             break;
+//     }   else {
+//         console.log("that's also a cool color!")
+//     }
+//
+// }
+
 //
 // /**
 //  * TODO:
@@ -207,6 +255,24 @@ analyzeColor("red")
 //  * Prompt the user for a color when the page loads, and pass the input from the
 //  * user to your `analyzeColor` function. Alert the return value from your
 //  * function to show it to the user.
+
+// prompt("What is your fav color?")
+// switch(analyzeColor()){
+//     case "red":
+//         alert("pomegranates are red");
+//         break;
+//     case "blue":
+//         alert("the oceans from space are blue");
+//         break;
+//     case "orange":
+//         alert("orange is pumpkin color");
+//         break;
+//     case "indigo":
+//         alert("indigo ");
+//         break;
+//     default:
+//         alert(prompt() + " is a cool color")
+// }
 
 // /* ########################################################################## */
 //
