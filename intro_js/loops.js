@@ -151,9 +151,9 @@
 // }
 
 // let animals = ["frog", 'dog', "cat", "horse"];
-// // for(let i = 0; i<=animals.length -1; i++){
-// //     console.log("my favorite animal is: " + animals[i]);
-// // }
+// for(let i = 0; i<=animals.length -1; i++){
+//     console.log("my favorite animal is: " + animals[i]);
+// }
 // let i = 0;
 // while(i<animals.length){
 //     console.log("my fave animal is:" + animals[i]);
