@@ -23,7 +23,7 @@ console.log(names[0], names[1], names[2], names[3]);
 //      * Write some code that uses a for loop to log every item in the names
 //      * array.
 //      */
-for(let i = 0; i<=names.length -1; i++){
+for(let i = 0; i < names.length; i++){
     console.log("My name is " + names[i]);
 }
 
@@ -31,16 +31,16 @@ for(let i = 0; i<=names.length -1; i++){
 //      * TODO:
 //      * Refactor your above code to use a `forEach` loop
 //      */
-let checkedOption;
-names.forEach(names => {
-    if (names.checked) {
-        checkedOption = names[name.id];
-    }
-    return checkedOption;
-});
-// names.forEach(function (name) {
-//     console.log()
-// })
+// let checkedOption;
+// names.forEach(names => {
+//     if (names.checked) {
+//         checkedOption = names[name.id];
+//     }
+//     return checkedOption;
+// });
+names.forEach(function (element) {
+    console.log(element);
+})
 
 
 
@@ -71,7 +71,10 @@ function hello (arr3){
     return arr3[arr3.length - 1];
 }
 hello(names)
-
+// function last(array){
+//     let lastIndexOfArray = array.length;
+//     return array[lastIndexOfArray];
+// }
 
 //      * Example:
 //      *  > first([1, 2, 3, 4, 5]) // returns 1
