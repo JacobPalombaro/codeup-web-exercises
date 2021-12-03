@@ -71,3 +71,30 @@
 //
 // console.log(students.lastIndexOf("Mina"));// 2,
 // console.log(students.lastIndexOf())
+
+// FUNCTIONS
+function sayHello(){
+    console.log("Say hey");
+}
+function nameOfFunction(num1, randomFunction ){
+    console.log("Doing background task");
+    randomFunction();
+    return  num1;
+}
+
+console.log(sayHello);
+nameOfFunction(1, sayHello)
+
+
+// console.log(nameOfFunction(4, function () {
+//     console.log("hey there!")
+// }));
+// nameOfFunction(1, )
+
+//METHODS
+//methods ae pre existing functions
+
+// Math.random() // random number between 0 and 1
+// console.log("PRINT THIS OUT");
+// parseInt();
+
