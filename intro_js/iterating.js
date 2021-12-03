@@ -38,6 +38,12 @@ names.forEach(names => {
     }
     return checkedOption;
 });
+// names.forEach(function (name) {
+//     console.log()
+// })
+
+
+
 //     /**
 //      * TODO:
 //      * Create the following three functions, each will accept an array and
@@ -61,8 +67,8 @@ function codeup (arr2){
 codeup(names)
 
 function hello (arr3){
-    console.log(arr3[names.length - 1])
-    return arr3[names.length - 1];
+    console.log(arr3[arr3.length - 1])
+    return arr3[arr3.length - 1];
 }
 hello(names)
 
