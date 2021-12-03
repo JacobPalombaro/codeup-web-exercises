@@ -4,7 +4,7 @@
 
 //---While--
 // 20 parking spots open
-// 1 car driving arund
+// 1 car driving around
 // ? how many times will have to drive around to find spot
 
 // while(conditions){
@@ -173,23 +173,13 @@
 // }
 
 // NESTED LOOPS
-for(counter = 1; counter <=5; counter++){
-    console.log('FIRST counter:' + counter);
-    for(let counterTwo = 5; counterTwo > 0;  counterTwo--){
-        console.log('SECOND counter: ' + counterTwo);
-    }
-    // counts from 5 to 1
-}
-
-
-
-
-
-
-
-
-
-
+// for(counter = 1; counter <=5; counter++){
+//     console.log('FIRST counter:' + counter);
+//     for(let counterTwo = 5; counterTwo > 0;  counterTwo--){
+//         console.log('SECOND counter: ' + counterTwo);
+//     }
+//     // counts from 5 to 1
+// }
 
 //--
 
