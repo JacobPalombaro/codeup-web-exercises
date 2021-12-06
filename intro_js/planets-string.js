@@ -26,5 +26,4 @@
     const planetsWithBreakTags = planetsArray.join('<br>')
         console.log(planetsWithBreakTags)
 
-    let planetList + planetsArray.joint()
 })();
