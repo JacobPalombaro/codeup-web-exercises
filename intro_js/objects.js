@@ -40,23 +40,23 @@ console.log("Welcome to Objects");
 //
 // console.log(person)
 
-let dog = {
-    breed: " Huskey",
-    colors: [" brown", " black", " white"],
-    sex: "F",
-    name: "luna",
-    isFloofer: true,
-    bark: function (loud){
-        if (loud){
-            console.log("woof woof!!");
-        }else{
-            console.log("ruf ruf");
-        }
-    },
-   getDetails: function (){
-        return this.colors[0] + this.breed + " named " + this.name;
-   }
-};
+// let dog = {
+//     breed: " Huskey",
+//     colors: [" brown", " black", " white"],
+//     sex: "F",
+//     name: "luna",
+//     isFloofer: true,
+//     bark: function (loud){
+//         if (loud){
+//             console.log("woof woof!!");
+//         }else{
+//             console.log("ruf ruf");
+//         }
+//     },
+//    getDetails: function (){
+//         return this.colors[0] + this.breed + " named " + this.name;
+//    }
+// };
 
 
 
@@ -67,14 +67,20 @@ let dog = {
 
 
 
-// (function() {
-//     "use strict";
+(function() {
+    "use strict";
 //
 //     /**
 //      * TODO:
 //      * Create an object with firstName and lastName properties that are strings
 //      * with your first and last name. Store this object in a variable named
 //      * `person`.
+    let person = {
+        lastName: "Palombaro",
+        firstName: "Jacob"
+    }
+    console.log(person.lastName);
+    console.log(person.firstName);
 //      *
 //      * Example:
 //      *  > console.log(person.firstName) // "Rick"
@@ -86,7 +92,11 @@ let dog = {
 //      * Add a sayHello method to the person object that returns a greeting using
 //      * the firstName and lastName properties.
 //      * console.log the returned message to check your work
-//      *
+    person.sayHello = function () {
+        return "Hello from "+ this.firstName +" "+ this.lastName + "!"
+    }
+    console.log(person.sayHello())
+
 //      * Example
 //      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
 //      */
@@ -104,20 +114,42 @@ let dog = {
 //      * represents one shopper. Use a foreach loop to iterate through the array,
 //      * and console.log the relevant messages for each person
 //      */
-//
-//     // var shoppers = [
-//     //     {name: 'Cameron', amount: 180},
-//     //     {name: 'Ryan', amount: 250},
-//     //     {name: 'George', amount: 320}
-//     // ];
-//
+
+
+    var shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+    shoppers.forEach(function (shopper){
+        if (shopper.amount > 200){
+            console.log(shopper.amount + " 12%");
+            console.log("congrats on the discount!" + shopper.name);
+            console.log(shopper.amount -(shopper.amount * .12));
+        }else{
+            console.log("no discount for you!" + shopper.name);
+        }
+            }
+    )
+
+
+
+    //
 //     /** TODO:
 //      * Create an array of objects that represent books and store it in a
 //      * variable named `books`. Each object should have a title and an author
 //      * property. The author property should be an object with properties
 //      * `firstName` and `lastName`. Be creative and add at least 5 books to the
 //      * array
-//      *
+    let Books = [
+        {title1: "Harry Potter", Author: {lastName:"Rowling" , firstName: "J.K."}},
+        {title2: "eragon", Author: {lastName: "Paolini" , firstName: "Chris"}},
+        {title3: "lord of the rings", Author: {lastName: "Tolkien" , firstName: "J.R.R."}}
+
+    ]
+    console.log(Books);
+
+
 //      * Example:
 //      * > console.log(books[0].title) // "The Salmon of Doubt"
 //      * > console.log(books[0].author.firstName) // "Douglas"
@@ -131,7 +163,18 @@ let dog = {
 //      * - the book number (use the index of the book in the array)
 //      * - the book title
 //      * - author's full name (first name + last name)
-//      *
+
+// Books.forEach(function (title){
+//     console.log(title)
+//     console.log(title1),
+//     console.log(title2),
+//     console.log(title3);
+//
+//     })
+
+
+
+
 //      * Example Console Output:
 //      *
 //      *      Book # 1
@@ -160,7 +203,7 @@ let dog = {
 //      *   `showBookInfo` function.
 //      */
 //
-// })();
+})();
 
 
 
