@@ -93,7 +93,7 @@ console.log("Welcome to Objects");
 //      * the firstName and lastName properties.
 //      * console.log the returned message to check your work
     person.sayHello = function () {
-        return "Hello from "+ this.firstName +" "+ this.lastName + "!"
+        return "Hello from " + this.firstName + " " + this.lastName + "!"
     }
     console.log(person.sayHello())
 
@@ -116,22 +116,21 @@ console.log("Welcome to Objects");
 //      */
 
 
-    var shoppers = [
+    let shoppers = [
         {name: 'Cameron', amount: 180},
         {name: 'Ryan', amount: 250},
         {name: 'George', amount: 320}
     ];
-    shoppers.forEach(function (shopper){
-        if (shopper.amount > 200){
-            console.log(shopper.amount + " 12%");
-            console.log("congrats on the discount!" + shopper.name);
-            console.log(shopper.amount -(shopper.amount * .12));
-        }else{
-            console.log("no discount for you!" + shopper.name);
-        }
+    shoppers.forEach(function (shopper) {
+            if (shopper.amount > 200) {
+                console.log(shopper.amount + " 12%");
+                console.log("congrats on the discount!" + shopper.name);
+                console.log(shopper.amount - (shopper.amount * .12));
+            } else {
+                console.log("no discount for you!" + shopper.name);
             }
+        }
     )
-
 
 
     //
@@ -142,12 +141,35 @@ console.log("Welcome to Objects");
 //      * `firstName` and `lastName`. Be creative and add at least 5 books to the
 //      * array
     let Books = [
-        {title1: "Harry Potter", Author: {lastName:"Rowling" , firstName: "J.K."}},
-        {title2: "eragon", Author: {lastName: "Paolini" , firstName: "Chris"}},
-        {title3: "lord of the rings", Author: {lastName: "Tolkien" , firstName: "J.R.R."}}
-
+        {
+            title: "Harry Potter",
+            Author: {
+                lastName: "Rowling",
+                firstName: "J.K."
+            }
+        },
+        {
+            title: "eragon",
+            Author: {
+                lastName: "Paolini",
+                firstName: "Chris"
+            }
+        },
+        {
+            title: "lord of the rings",
+            Author: {
+                lastName: "Tolkien",
+                firstName: "J.R.R."
+            }
+        },
+        {
+            title: "Brave new world",
+            Author: {
+                lastName: "unknown",
+                firstName: "Unknown"
+            }
+        },
     ]
-    console.log(Books);
 
 
 //      * Example:
@@ -163,17 +185,6 @@ console.log("Welcome to Objects");
 //      * - the book number (use the index of the book in the array)
 //      * - the book title
 //      * - author's full name (first name + last name)
-
-// Books.forEach(function (title){
-//     console.log(title)
-//     console.log(title1),
-//     console.log(title2),
-//     console.log(title3);
-//
-//     })
-
-
-
 
 //      * Example Console Output:
 //      *
@@ -191,7 +202,14 @@ console.log("Welcome to Objects");
 //      *      ---
 //      *      ...
 //      */
-//
+    Books.forEach(function (book, index) {
+        // console.log(`Book # ${index + 1}\ntitle: ${book.title}\Author: ${book.Author.firstName}${book.Author.lastName}\n---`)
+        console.log("Book #" + (index + 1))
+        console.log("Title: " + book.title + " ")
+        console.log("Author: " + book.Author.firstName + " " + book.Author.lastName)
+    })
+
+
 //     /**
 //      * Bonus:
 //      * - Create a function named `createBook` that accepts a title and author
@@ -203,6 +221,29 @@ console.log("Welcome to Objects");
 //      *   `showBookInfo` function.
 //      */
 //
+    function createBook(bookTitle, authorFirstName, authorLastName) {
+        return {
+            title: bookTitle,
+            author: {
+                firstName: authorFirstName,
+                lastName: authorLastName,
+            }
+        }
+    }
+
+
+
+    function showBookInfo(bookObj) {
+        console.log(bookObj)
+
+        // console.log(createBook("gdt", "stieg", "larson"))
+        let books;
+        books.push(bookObj("GDT", "stieg", "larson"))
+        return bookObj.title + bookObj.firstName + bookObj.lastName;
+
+    }
+    showBookInfo(createBook("GDT", "stieg", "larson"));
+
 })();
 
 
