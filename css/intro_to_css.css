@@ -3,13 +3,17 @@
 #orange {
     color: orange;
 }
+
+
 h1{
     color: darkgreen;
 }
 
 h1{
     color: darkred;
+    font-family: 'Redacted Script' cursive;
 }
+
 
 /* 1 ID th element you want to style
 
@@ -27,14 +31,54 @@ p {
     color: mediumvioletred;
 }
 /*syntax*/
-selector {
-/*    apply css styling here */
-    property: value;
-    property: value;
-    property: value;
-    '
+/*selector {*/
+/*!*    apply css styling here *!*/
+/*    property: value;*/
+/*    property: value;*/
+/*    property: value;*/
+/*    '*/
+/*}*/
+#purple-bg{
+    background-color: purple;
+}
+
+.animals {
+    border: 3px solid black;
+}
+ul {
+    border: 1px solid blue;
+    margin: 5px;
+}
+ul a{
+    color: magenta;
+}
+#unique-ul * {
+    color: #f0803c;
+}
+.animals ul p{
+    color: black;
+    border: none;
+    background-color: #ffffff;
+}
+#unique-ul a:hover{
+    color: white;
+    background-color: black;
+}
+.class-heading{
+    color: deeppink;
+}
+#id-heading{
+    color: #f0803c;
+}
+.other-class{
+    color: #225560;
+    border-top: 3px solid black;
 }
 
 /*this comment
 can be on
 multi lines*/
+
+
+
+
