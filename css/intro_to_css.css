@@ -1,0 +1,40 @@
+<
+
+#orange {
+    color: orange;
+}
+h1{
+    color: darkgreen;
+}
+
+h1{
+    color: darkred;
+}
+
+/* 1 ID th element you want to style
+
+ /* tag name - will get aplied to alll of that tag */
+
+p {
+    color: green;
+}
+/* .classvalue- apply to all elements */
+.purple{
+    color: purple;
+}
+/* #idvalue*/
+#title {
+    color: mediumvioletred;
+}
+/*syntax*/
+selector {
+/*    apply css styling here */
+    property: value;
+    property: value;
+    property: value;
+    '
+}
+
+/*this comment
+can be on
+multi lines*/
