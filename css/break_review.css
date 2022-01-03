@@ -1,0 +1,23 @@
+
+
+h2{
+    color: orange;
+    background-color: pink;
+}
+main br{
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main > p{
+    border: solid 1px magenta;
+
+}
+.bold{
+    font-weight: bolder;
+}
+
