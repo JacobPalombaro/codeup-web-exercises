@@ -21,7 +21,7 @@
         // TODO: This function needs to be called once every second
         var intervalId = setInterval
         function updateTimer() {
-            if (detonationTimer == 0) {
+            if (detonationTimer === 0) {
                 alert('EXTERMINATE!');
                 document.body.innerHTML = '';
             } else if (detonationTimer > 0) {
@@ -29,13 +29,30 @@
             }
 
             detonationTimer--;
-        }, interval);
+        }, 1000);
 
         // TODO: When this function runs, it needs to
         // cancel the interval/timeout for updateTimer()
-        function defuseTheBOM() {
-
+        // function defuseTheBOM() {
+        //     clearInterval(intervalId);
+        //     let confirm = confirm("are you sure?");
+        //     if(confirm){function updateTimer() {
+        //     if (detonationTimer === 0) {
+        //         alert('Exterminate!');
+        //         document.body.innerHTML = '';
+        //     } else if (detonationTimer > 0){
+        //         document.getElementById('timer'). innerHTML = detonationTimer;
+        //     }
+        //     }
+        //     }
+        //
+        // }
+        function defuseTheBOM(){
+            setTimeout(function(){
+                clearInterval(intervalId);
+            })
         }
+
 
         // Don't modify anything below this line!
         //
