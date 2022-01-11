@@ -1,0 +1,34 @@
+body {
+    padding: 1em;
+    background-color: slategray;
+}
+
+hr {
+    border-top: 5px solid green;
+}
+.card-body {
+    margin: 0;
+    padding: 1em;
+}
+.card {
+    background-color: powderblue;
+    margin: 0;
+}
+header{
+    display: flex;
+    /*justify-content: center;*/
+    text-align: center;
+}
+ol {
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+ol > li {
+    padding: 0 2.5em;
+}
