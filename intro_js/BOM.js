@@ -60,9 +60,9 @@
 //
 // // Set Timeout
 
-var promptAnswer = prompt("whats your name?");
+var promptAnswer = prompt("Hows the weather today?");
 
-var retrievedSpan = document.getElementById("name");
+var retrievedSpan = document.getElementById("weather");
 console.log("promptAnswer: ", promptAnswer);
 console.log("retrievedSpan: ", retrievedSpan);
 
@@ -70,4 +70,11 @@ retrievedSpan.innerHTML = promptAnswer;
 
 // --
 // document --> everything in the body of your HTML
+
+var changeParagraph = document.getElementById("red");
+changeParagraph.innerHTML = "The weather is cold today";
+
+
+
+
 
